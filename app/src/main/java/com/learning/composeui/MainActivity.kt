@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.learning.composeui.top_app_bar.CenterAlignedTopBar
+import com.learning.composeui.top_app_bar.MediumTopAppBar_
 import com.learning.composeui.top_app_bar.SmallTopAppBar_
 import com.learning.composeui.ui.theme.ComposeUITheme
 
@@ -21,8 +22,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ComposeUITheme {
-               // SmallTopAppBar_()
-                CenterAlignedTopBar()
+                // SmallTopAppBar_()
+                //CenterAlignedTopBar()
+                MediumTopAppBar_()
             }
         }
     }
