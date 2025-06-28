@@ -30,18 +30,6 @@ fun SmallTopAppBar_() {
             )
         }
     ){ innerPadding ->
-        LazyColumn(
-            modifier = Modifier
-                .padding(innerPadding)
-                .fillMaxSize()
-        ) {
-            items(20) { item ->
-                Text(
-                    text = "Item $item",
-                    style = MaterialTheme.typography.bodySmall,
-                    modifier = Modifier.padding(16.dp)
-                )
-            }
-        }
+        ListItem(innerPadding)
     }
 }
