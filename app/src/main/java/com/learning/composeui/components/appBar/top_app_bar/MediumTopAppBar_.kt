@@ -1,14 +1,13 @@
-package com.learning.composeui.appBar.top_app_bar
+package com.learning.composeui.components.appBar.top_app_bar
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.material.icons.filled.AccountCircle
-import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.MediumTopAppBar
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
@@ -17,31 +16,31 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.text.style.TextOverflow
-import com.learning.composeui.appBar.list.ListItem
+import com.learning.composeui.components.appBar.list.ListItem
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun CenterAlignedTopBar(){
-    val scrollBehaviors = TopAppBarDefaults.pinnedScrollBehavior(rememberTopAppBarState()) // For enter .enterAlwaysScrollBehavior()
+fun MediumTopAppBar_(){
+    val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior(rememberTopAppBarState())
 
     Scaffold(
-        modifier = Modifier.nestedScroll(scrollBehaviors.nestedScrollConnection),
+        modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
         topBar = {
-            CenterAlignedTopAppBar(
-                colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
+            MediumTopAppBar(
+                colors = TopAppBarDefaults.mediumTopAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primaryContainer,
                     titleContentColor = MaterialTheme.colorScheme.primary
                 ),
                 title = {
                     Text(
-                        text = "Center Aligned Top Bar",
+                        text = "Medium Top App Bar",
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis
                     )
                 },
                 navigationIcon = {
                     IconButton(
-                        onClick = {},
+                        onClick = {}
                     ) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.ArrowBack,
@@ -51,23 +50,7 @@ fun CenterAlignedTopBar(){
                 },
                 actions = {
                     IconButton(
-                        onClick = {},
-                    ) {
-                        Icon(
-                            imageVector = Icons.Filled.AccountCircle,
-                            contentDescription = null
-                        )
-                    }
-                    IconButton(
-                        onClick = {},
-                    ) {
-                        Icon(
-                            imageVector = Icons.Filled.AccountBox,
-                            contentDescription = null
-                        )
-                    }
-                    IconButton(
-                        onClick = {},
+                        onClick = {}
                     ) {
                         Icon(
                             imageVector = Icons.Filled.AccountCircle,
@@ -75,10 +58,10 @@ fun CenterAlignedTopBar(){
                         )
                     }
                 },
-                scrollBehavior = scrollBehaviors
+                scrollBehavior = scrollBehavior
             )
         }
-    ){ innerPadding ->
+    ) { innerPadding ->
         ListItem(innerPadding)
     }
 }

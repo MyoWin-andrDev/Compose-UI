@@ -1,4 +1,4 @@
-package com.learning.composeui.appBar.top_app_bar
+package com.learning.composeui.components.appBar.top_app_bar
 
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
@@ -7,7 +7,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
-import com.learning.composeui.appBar.list.ListItem
+import com.learning.composeui.components.appBar.list.ListItem
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

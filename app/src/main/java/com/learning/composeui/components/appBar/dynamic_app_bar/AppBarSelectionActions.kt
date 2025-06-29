@@ -1,4 +1,4 @@
-package com.learning.composeui.appBar.dynamic_app_bar
+package com.learning.composeui.components.appBar.dynamic_app_bar
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Share
@@ -18,7 +18,7 @@ fun AppBarSelectionActions(
     selectedItem : Set<Int>,
     modifier : Modifier = Modifier
 ){
-    val hasSelected = selectedItem.isEmpty()
+    val hasSelected = selectedItem.isNotEmpty()
     val topBarText : String = if(hasSelected) "Selected ${selectedItem.size}" else "List Item Selected"
     TopAppBar(
         title = {Text(topBarText)},

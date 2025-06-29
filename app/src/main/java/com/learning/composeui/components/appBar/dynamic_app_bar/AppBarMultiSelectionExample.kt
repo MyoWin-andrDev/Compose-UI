@@ -1,7 +1,6 @@
-package com.learning.composeui.appBar.dynamic_app_bar
+package com.learning.composeui.components.appBar.dynamic_app_bar
 
 import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.foundation.Indication
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Box

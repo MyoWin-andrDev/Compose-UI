@@ -1,4 +1,4 @@
-package com.learning.composeui.appBar.bottom_app_bar
+package com.learning.composeui.components.appBar.bottom_app_bar
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons

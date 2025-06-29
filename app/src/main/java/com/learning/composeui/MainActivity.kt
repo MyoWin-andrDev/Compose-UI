@@ -6,8 +6,10 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.learning.composeui.appBar.bottom_app_bar.BottomAppBar_
-import com.learning.composeui.appBar.dynamic_app_bar.AppBarMultiSelectionExample
+import com.learning.composeui.components.appBar.dynamic_app_bar.AppBarMultiSelectionExample
+import com.learning.composeui.components.badge.BasicBadge
+import com.learning.composeui.components.badge.DetailsBadge
+import com.learning.composeui.components.bottom_sheet.BottomSheet
 import com.learning.composeui.ui.theme.ComposeUITheme
 
 class MainActivity : ComponentActivity() {
@@ -20,7 +22,10 @@ class MainActivity : ComponentActivity() {
                 //CenterAlignedTopBar()
                 //MediumTopAppBar_()
                 //BottomAppBar_()
-                AppBarMultiSelectionExample()
+                //AppBarMultiSelectionExample()
+                //BasicBadge()
+                //DetailsBadge()
+                BottomSheet()
             }
         }
     }
