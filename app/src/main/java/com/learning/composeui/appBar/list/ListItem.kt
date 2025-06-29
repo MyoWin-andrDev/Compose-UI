@@ -1,4 +1,4 @@
-package com.learning.composeui.top_app_bar
+package com.learning.composeui.appBar.list
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
