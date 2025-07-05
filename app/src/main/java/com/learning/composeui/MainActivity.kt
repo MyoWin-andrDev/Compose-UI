@@ -10,6 +10,8 @@ import com.learning.composeui.components.appBar.dynamic_app_bar.AppBarMultiSelec
 import com.learning.composeui.components.badge.BasicBadge
 import com.learning.composeui.components.badge.DetailsBadge
 import com.learning.composeui.components.bottom_sheet.BottomSheet
+import com.learning.composeui.components.button.BasicBt
+import com.learning.composeui.components.button.floating_action_button.FloatingActionButton
 import com.learning.composeui.ui.theme.ComposeUITheme
 
 class MainActivity : ComponentActivity() {
@@ -25,7 +27,9 @@ class MainActivity : ComponentActivity() {
                 //AppBarMultiSelectionExample()
                 //BasicBadge()
                 //DetailsBadge()
-                BottomSheet()
+                //BottomSheet()
+                //BasicBt()
+                FloatingActionButton()
             }
         }
     }
