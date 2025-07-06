@@ -1,5 +1,6 @@
 package com.learning.composeui.components.button.floating_action_button
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,11 +14,14 @@ import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LargeFloatingActionButton
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SmallFloatingActionButton
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
@@ -29,7 +33,8 @@ fun FloatingActionButton(){
             modifier = Modifier
                 .fillMaxSize()
                 .padding(contentPadding),
-            horizontalAlignment = Alignment.CenterHorizontally
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center
         ){
             NormalFloatingActionButton()
             Spacer(modifier = Modifier.height(16.dp))
@@ -45,7 +50,9 @@ fun FloatingActionButton(){
 @Composable
 fun NormalFloatingActionButton(){
     FloatingActionButton(
-        onClick = {}
+        onClick = {},
+        containerColor = MaterialTheme.colorScheme.primaryContainer,
+        contentColor = MaterialTheme.colorScheme.primary
     ) {
         Icon(
             imageVector = Icons.Filled.Add,
@@ -58,7 +65,9 @@ fun NormalFloatingActionButton(){
 @Composable
 fun SmallFloatingActionButton(){
     SmallFloatingActionButton(
-        onClick = {}
+        onClick = {},
+        containerColor = MaterialTheme.colorScheme.primaryContainer,
+        contentColor = MaterialTheme.colorScheme.primary
     ) {
         Icon(
             imageVector = Icons.Filled.Add,
@@ -71,7 +80,9 @@ fun SmallFloatingActionButton(){
 fun LargeFloatingActionButton(){
     LargeFloatingActionButton(
         onClick = {},
-        shape = CircleShape
+        shape = CircleShape,
+        containerColor = MaterialTheme.colorScheme.primaryContainer,
+        contentColor = MaterialTheme.colorScheme.primary
     ) {
         Icon(
             imageVector = Icons.Filled.Add,
@@ -84,7 +95,9 @@ fun LargeFloatingActionButton(){
 fun ExtendedFloatingActionButton(){
     ExtendedFloatingActionButton(
         onClick = {},
-        icon = { Icons.Filled.Edit },
-        text = { "Edit Here!" }
+        icon = { Icon(Icons.Filled.Edit, contentDescription = null) },
+        text = { Text("Edit Here" ) },
+        containerColor = MaterialTheme.colorScheme.primaryContainer,
+        contentColor = MaterialTheme.colorScheme.primary
     )
 }
