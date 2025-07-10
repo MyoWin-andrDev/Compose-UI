@@ -8,7 +8,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.learning.composeui.components.button.icon_button.ToggleIconButtonExample
 import com.learning.composeui.components.button.segment_button.SingleChoiceSegmentedButton
+import com.learning.composeui.components.card.AdvancedCard
 import com.learning.composeui.components.card.CardExample
+import com.learning.composeui.components.check_box.CheckBoxExample
 import com.learning.composeui.ui.theme.ComposeUITheme
 
 class MainActivity : ComponentActivity() {
@@ -29,7 +31,9 @@ class MainActivity : ComponentActivity() {
                 //FloatingActionButton()
                 //ToggleIconButtonExample()
                 //SingleChoiceSegmentedButton()
-                CardExample()
+                //CardExample()
+                //AdvancedCard()
+                CheckBoxExample()
             }
         }
     }
